@@ -1,0 +1,110 @@
+:root {
+  --size-1: 50px;
+  --size-2: 8px;
+}
+
+#container {
+  padding: 8rem 10rem 4rem;
+  display: flex;
+  align-items: center;
+}
+
+#circle-1, #circle-2, #circle-3, #circle-4 {
+  position: absolute;
+  width: var(--size-1);
+  height: var(--size-1);
+  border-radius: 50%;
+  transition: all .3s ease-in-out;
+}
+
+#circle-1-in, #circle-2-in, #circle-3-in, #circle-4-in {
+  position: relative;
+  width: calc(var(--size-1)  - var(--size-2));
+  height: calc(var(--size-1) - var(--size-2));
+  background: white;
+  border-radius: 50%;
+  transform: translate(calc(var(--size-2) / 2), calc(var(--size-2) / 2));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#circle-1-in-number, #circle-2-in-number, #circle-3-in-number, #circle-4-in-number {
+  position: relative;
+  font-size: 1.6rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  opacity: 0.7;
+  z-index: 10;
+}
+
+#circle-1 {
+  background: rgba(0, 119, 255, 0.9);
+}
+
+#circle-2 {
+  transform: translate(160px);
+  background-color: rgba(209, 210, 211, 0.9);
+}
+
+#circle-3 {
+  transform: translate(320px);
+  background-color: rgba(209, 210, 211, 0.9);
+}
+
+#circle-4 {
+  transform: translate(480px);
+  background-color: rgba(209, 210, 211, 0.9);
+}
+
+#line-1 {
+  background-color: rgba(209, 210, 211, 0.9);
+  width: 160px;
+  height: 6px;
+  transition: all .3s ease-in-out;
+}
+
+#line-2 {
+  background-color: rgba(209, 210, 211, 0.9);
+  width: 160px;
+  height: 6px;
+  transition: all .3s ease-in-out;
+}
+
+#line-3 {
+  background-color: rgba(209, 210, 211, 0.9);
+  width: 160px;
+  height: 6px;
+  transition: all .3s ease-in-out;
+}
+
+#button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  transform: translate(28px);
+}
+
+button {
+  padding: .3rem 1.5rem;
+  border-radius: .5rem;
+  color: white;
+  font-size: 1.03rem;
+}
+
+#first-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn-prev {
+  cursor: not-allowed;
+  background: rgba(209, 210, 211, 0.9);
+}
+
+#btn-next {
+  cursor: pointer;
+  background: rgba(0, 119, 255, 0.9);
+}

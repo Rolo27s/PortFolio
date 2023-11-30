@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  transition: all 1.5s ease;
+}
+
+p {
+  font-weight: 600;
+  font-size: 4rem;
+  padding: 2rem;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container div {
+  overflow: hidden;
+}
+
+.container div.ps5 {
+  height: 100vh;
+  width: 50vw;
+}
+
+.max {
+  width: 80vw !important;
+}
+
+.min {
+  width: 20vw !important;
+}
+
+.container div.xbox {
+  height: 100vh;
+  width: 50vw;
+}
+
+.ps5 {
+  background-image: url(./PS5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.xbox {
+  background-image: url(./XBox.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buy {
+  padding: 1rem 4rem;
+  margin-top: 5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ps5 .buy {
+  background-color: transparent;
+  border: 2px solid #111;
+}
+
+.ps5 .buy:hover {
+  background-color: rgb(123, 101, 224);
+  border: 2px solid rgb(123, 101, 224);
+  box-shadow: 0px 0px 2px #222;
+}
+
+.xbox .buy {
+  color: #eee;
+  background-color: transparent;
+  border: 2px solid #eee;
+  box-shadow: 0px 0px 2px #222;
+}
+
+.xbox .buy:hover {
+  background-color: rgb(1, 66, 1);
+  border: 2px solid rgb(1, 66, 1);
+  box-shadow: 0px 0px 2px #222;
+}
+
+button {
+  transition: all 0.5s ease; 
+}

@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all .5s ease;
+}
+
+body {
+  background-color: #6641ca;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.input-text {
+  height: 50px;
+  width: 200px;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+.input-text {
+  border: none;
+  outline: none;
+}
+
+.button-search {
+  cursor: pointer;
+}
+
+.hidden {
+  width: 0px;
+  padding: 0px;
+}

@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeeeeea1;
+}
+
+body {
+  margin: 1rem;
+}
+
+h1 {
+  margin: 2rem;
+}
+
+.faqs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.faqs {
+  border: 1px solid #222;
+  padding: 1.25rem;
+  border-radius: .5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  box-shadow: 3px 3px 6px #22222280;
+  transition: all 0.5s ease;
+  background-color: #eeeeeea1;
+}
+
+.q-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.a {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  font-weight: 100;
+  font-size: 0.9rem;
+  transition: all .5s ease;
+}
+
+.q {
+  font-weight: 600;
+  padding: 0rem 1rem;
+}
+
+.q-btn {
+  background-image: url(./assets/arrow.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  width: 25px;
+  height: 25px;
+  border: none;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.faqs-bg {
+  background-image: url(./assets/chat_bubles.png);
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-color: #fff;
+  background-position: start;
+}

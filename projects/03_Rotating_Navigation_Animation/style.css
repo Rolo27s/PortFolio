@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'lato', 'Helvetica Neue', Arial, Helvetica;
+  transition: all 1s ease;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.page {
+  padding: 6rem 3rem;
+  background-color: #fff;
+  transform-origin: left top;
+  height: 100%;
+  max-width: 980px;
+}
+
+.small-text {
+  font-size: 0.8rem;
+  color: #888;
+  font-style: italic;
+}
+
+p {
+  margin: 1rem 0rem;
+  line-height: 1.5rem;
+  color: #333;
+  max-width: 800px;
+}
+
+img {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 1rem;
+}
+
+.rotate {
+  width: 200px;
+  height: 200px;
+  background-color: #ff7575;
+  border-radius: 100%;
+  position: fixed;
+  top: -100px;
+  left: -100px;
+  z-index: 10;
+}
+
+.rotate__three-lines {
+  position: relative;
+  display: inline-block;
+  color: #eee;
+  font-weight: 700;
+  font-size: 2.5rem;
+  top: 110px;
+  left: 125px;
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+
+.rotate__revert {
+  position: relative;
+  display: inline-block;
+  color: #eee;
+  font-weight: 700;
+  font-size: 3rem;
+  top: 115px;
+  left: 10px;
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+
+/* PARTES DINÁMICAS */
+
+/* Click en class="rotate__three-lines" agregar estos 3 efectos:
+      En class="rotate" -> transform: rotate(-90deg);
+      En class="page" -> transform: rotate(-20deg);
+      En class="navigator" -> left: 0px;
+  
+  Click en class="rotate-revert" volver al estado inicial:
+      En class="rotate" -> transform: rotate(0deg);
+      En class="page" -> transform: rotate(0deg);
+      En class="navigator" -> left: -500px;
+*/
+
+.rotate-used {
+  transform: rotate(-90deg);
+}
+
+.page-used {
+  transform: rotate(-20deg);
+}
+
+body {
+  background-color: #222;
+}
+
+.navigator {
+  display: inline-flex;
+  position: absolute;
+  top: calc(100vh - 250px);
+  /* JS - Dinamizar este left de -500 a 0 coordinado con click en class="rotate__three-lines"*/
+  left: -500px;
+}
+
+.navigator-used {
+  left: 0px;
+}
+
+.navigator ul {
+  display: inline-flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.navigator ul li {
+  padding: 1rem;
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 0.2rem;
+}

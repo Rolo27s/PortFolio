@@ -1,0 +1,260 @@
+:root {
+  color-scheme: dark light;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+  background-color: #000;
+  padding-bottom: .1rem;
+  top: -240px;
+}
+
+#banner {
+  background-image: url(./assets/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 240px;
+}
+
+#first-options {
+  display: none;
+  justify-content: end;
+  gap: 1rem;
+  margin-right: 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+#first-options > * {
+  padding: 0.25rem 0.5rem;
+}
+
+#first-options button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+  transition: all 1s ease;
+}
+
+#first-options button:hover {
+  color: rgb(41, 75, 228);
+}
+
+h1 {
+  text-align: center;
+  padding: 1.5rem;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(4,39,103,1) 35%, rgba(126,188,250,1) 100%);
+  color: white;
+}
+
+html, body, main, section {
+  background-color: #222;
+  color: #eee;
+}
+
+label {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.player-container {
+  display: flex;
+  gap: 4rem;
+  position: relative;
+  justify-content: start;
+  align-items: start;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+.mas_info, h2, .project-container {
+  max-width: 1100px;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+legend {
+  padding: 1rem 0rem;
+}
+
+fieldset {
+  border: none;
+  gap: 1rem;
+}
+
+.form-stats > fieldset{
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-container-stats {
+  display: grid;
+  grid-template-columns: 170px 140px;
+}
+
+.stats-pentagon {
+  background-color: rgba(0, 45, 128, 0.3);
+  width: 200px;
+  height: 200px;
+  border-radius: 1rem;
+}
+
+#pentagonCanvas {
+  background-color: rgb(126,188,250);
+  width: 240px;
+  height: 240px;
+  border-radius: 1rem;
+  padding: 1rem;
+  z-index: 11;
+}
+
+#pentagonCanvas-2 {
+  background-color: rgba(155, 191, 228, 0.7);
+  width: 240px;
+  height: 240px;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.axis-container-1, .axis-container-2 {
+  position: relative;
+  top: 0;
+  z-index: 5;
+  max-width: 250px;
+  max-height: 244px;
+  border: 2px solid rgba(111, 0, 255, 0.7);
+  border-radius: 1.1rem;
+  box-shadow: 0px 0px 10px rgba(111, 0, 255, 0.8);
+}
+
+.item-stat {
+  position: relative;
+}
+
+#item-html, #item-python {
+  left: 6rem;
+  top: -15rem;
+}
+
+#item-css, #item-php {
+  left: 0.5rem;
+  top: -13rem;
+}
+
+#item-git, #item-java{
+  left:12.4rem;
+  top: -21rem;
+}
+
+#item-javascript, #item-mysql {
+  left: 3rem;
+  top: -8rem;
+}
+
+#item-angular, #item-phpmyadmin {
+  left: 9.2rem;
+  top: -10.4rem;
+}
+
+blockquote {
+  font-style: italic;
+  font-family:serif, sans-serif;
+}
+
+.lorem {
+  font-size: 10rem;
+  line-height: 10rem;
+}
+
+.cronologia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 1035px;
+  overflow: hidden;
+}
+
+.evento {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 400px;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  transition: all 1s ease;
+}
+
+/* Selector de cajas impares */
+.evento:nth-child(2n+1) {
+  transform: translateX(-5000%);
+  margin-bottom: 0px !important;
+}
+
+/* Selector de cajas pares */
+.evento:nth-child(2n) {
+  transform: translateX(5000%);
+  margin-top: 0px !important;  
+}
+
+.active {
+  transform: translateX(0%) !important;
+}
+
+.punto {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #eeeeee;
+  padding: 0.25rem;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.fecha {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns:  repeat(3, 1fr);
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: #011127;
+}
+
+.section-blue {
+  background-color: #011127;
+  height: 500px;
+}
+
+.project-container div a {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1.25rem;
+  transition: color .5s ease;
+}
+
+.project-container div a:hover {
+  color: rgba(101, 250, 250, 0.8);
+}

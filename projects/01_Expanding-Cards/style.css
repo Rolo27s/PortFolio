@@ -1,0 +1,51 @@
+.cards-container {
+  display: flex;
+  padding: 1rem;
+  background: linear-gradient(rgba(100, 108, 255, 0.6) 70%, rgba(255, 255, 255, 0.2)) ;
+  height: calc(600px + 2rem);
+  gap: 1rem;
+  /* -webkit-transition: all 700ms ease-in; */
+  /* transition: all 0.3s ease-in-out; */
+}
+
+.card {
+  display: flex;
+  height: 600px;
+  width: auto;
+  align-items: end;
+  border-radius: 1rem;
+  padding: 1rem;
+  font-weight: 600;
+  filter: grayscale(0.5);
+  transition: all 0.3s ease-in-out;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.card.expanded {
+  width: 100%;
+  /* transition: all 0.3s ease-in-out; */
+}
+
+.card:hover {
+  filter: grayscale(0) contrast(1.1);
+  outline: 1px solid rgba(103, 16, 114, 0.7);
+}
+
+figcaption {
+  background-color: rgba(238, 238, 238, 0.65);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  /* transition: all 0.3s ease-in-out; */
+  opacity: 0;
+}
+
+figcaption:not(.hide) {
+  opacity: 1;
+}
+
+/* Clases dinámicas */
+.hide {
+  display: none;
+}
