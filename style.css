@@ -56,6 +56,8 @@ h1 {
   background: rgb(2,0,36);
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(4,39,103,1) 35%, rgba(126,188,250,1) 100%);
   color: white;
+  user-select: none;
+  z-index: 10;
 }
 
 html, body, main, section {
@@ -257,4 +259,13 @@ blockquote {
 
 .project-container div a:hover {
   color: rgba(101, 250, 250, 0.8);
+}
+
+#my-face {
+  opacity: 0.45;
+  transition: opacity 10s cubic-bezier(.23,1.13,.94,.94);
+}
+
+#my-face:hover {
+  opacity: 1;
 }
