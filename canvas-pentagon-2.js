@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const s5 = parseInt(side5.value);
 
     // Draw the first pentagon with a different line width, color, and background color
-    drawPentagon(s1, s2, s3, s4, s5, 2, "#000", "rgba(26,88,189,0.4)");
+    drawPentagon(s1, s2, s3, s4, s5, 2, "#000", "#a82424");
 
     // Draw the second pentagon with fixed values and default color
     drawPentagon(25, 25, 25, 25, 25);

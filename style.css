@@ -16,7 +16,7 @@ header {
 }
 
 #banner {
-  background-image: url(./assets/banner.jpg);
+  background-image: url(./assets/banner2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -54,16 +54,18 @@ header {
 }
 
 h1 {
+  display: inline-block;
   text-align: center;
   padding: 0.3rem;
-  background: rgb(0,0,0);
-  background: linear-gradient(0deg, rgba(0,0,0,0.75) 0%, rgba(0,36,86,0.65) 50%, rgba(0,0,0,1) 100%);
-  color: white;
+  /* background: rgb(0,0,0); */
+  color: #111;
   user-select: none;
   z-index: 10;
-  text-shadow: 3px 3px 3px black;
+  text-shadow: 3px 3px 3px #44444475;
   width: 100%;
   margin-bottom: 0rem;
+  font-size: 5rem;
+  font-weight: 600;
 }
 
 html, body, section {
@@ -73,9 +75,10 @@ html, body, section {
 
 main {
   color: #eee;
-  background-image: url(./imagenes/SL-093020-35920-11.png);
+  background-image: url(./imagenes/SL-093020-35920-12.png);
   background-repeat: no-repeat;
   background-size: cover;
+  /* Add the blur effect */
 }
 
 label {
@@ -110,6 +113,7 @@ h2, .project-container {
   padding: 0.75rem 2rem;
   margin: 0 auto;
   vertical-align: middle;
+  backdrop-filter: blur(10px);
 }
 
 .mas_info p {
@@ -143,7 +147,7 @@ fieldset {
 }
 
 #pentagonCanvas {
-  background-color: rgb(126,188,250);
+  background-color: rgba(0, 79, 158, 0.5);
   width: 240px;
   height: 240px;
   border-radius: 1rem;
@@ -152,7 +156,7 @@ fieldset {
 }
 
 #pentagonCanvas-2 {
-  background-color: rgba(155, 191, 228, 0.7);
+  background-color: rgba(228, 155, 155, 0.3);
   width: 240px;
   height: 240px;
   border-radius: 1rem;
@@ -164,10 +168,10 @@ fieldset {
   top: 0;
   z-index: 5;
   max-width: 250px;
-  max-height: 244px;
-  border: 2px solid rgba(111, 0, 255, 0.7);
+  max-height: 243.5px;
+  border: 2px solid rgba(0, 0, 0, 0.7);
   border-radius: 1.1rem;
-  box-shadow: 0px 0px 10px rgba(111, 0, 255, 0.8);
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
 }
 
 .item-stat {
@@ -214,7 +218,7 @@ blockquote {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 1035px;
+  height: 1200px;
   overflow: hidden;
 }
 
@@ -302,11 +306,12 @@ blockquote {
 }
 
 .biografia {
-  height: 350px;
+  /* height: 350px; */
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #eee;
+  padding: 2rem;
 }
 
 .biografia a {
@@ -318,4 +323,9 @@ blockquote {
   max-width: 400px;
   padding: 2rem;
   font-weight: 500;
+}
+
+#logo-JS {
+  width: 30px;
+  height: 30px;
 }
